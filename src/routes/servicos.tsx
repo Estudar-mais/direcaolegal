@@ -29,7 +29,7 @@ const services = [
   {
     icon: Car,
     title: "Categoria B — Carro",
-    desc: "Aulas teóricas online + 20 aulas práticas em carros novos.",
+    desc: "Aulas práticas em carros novos.",
     img: "https://images.unsplash.com/photo-1590362891991-f776e747a588?w=800&q=80",
   },
   {
@@ -47,13 +47,13 @@ const services = [
   {
     icon: GraduationCap,
     title: "Primeira Habilitação",
-    desc: "Acompanhamento completo do início ao fim do processo.",
+    desc: "",
     img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80",
   },
   {
     icon: RefreshCw,
-    title: "Renovação de CNH",
-    desc: "Renovação rápida com exames médicos no local.",
+    title: "Exame de direção",
+    desc: "",
     img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
   },
   {

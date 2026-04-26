@@ -76,15 +76,14 @@ function Index() {
               <Button
                 asChild
                 size="lg"
-                variant="outline"
-                className="text-base font-bold h-14 px-8 border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground"
+                className="text-base font-bold h-14 px-8 shadow-[0_0_30px_oklch(0.86_0.19_95/0.5)] hover:scale-105 transition-transform"
               >
                 <Link to="/servicos">Ver serviços</Link>
               </Button>
             </div>
             <div className="mt-10 flex gap-8">
               <div>
-                <div className="text-3xl font-black text-primary">5k</div>
+                <div className="text-3xl font-black text-primary">7k</div>
                 <div className="text-xs text-secondary-foreground/60">Alunos formados</div>
               </div>
               <div>
@@ -117,7 +116,7 @@ function Index() {
             </div>
 
             {/* Para quem é */}
-            <div className="bg-secondary/30 rounded-3xl p-8 md:p-10 border border-border/50 shadow-sm relative overflow-hidden">
+            <div className="bg-card rounded-3xl p-8 md:p-10 border border-primary/10 shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10" />
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-foreground">
                 <Users className="h-6 w-6 text-primary" />
