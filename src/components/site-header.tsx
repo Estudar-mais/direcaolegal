@@ -38,7 +38,11 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="hidden md:block">
-          <Button asChild size="lg" className="font-bold bg-primary text-black hover:bg-primary/90 h-10 px-8 rounded-lg">
+          <Button
+            asChild
+            size="lg"
+            className="font-bold bg-primary text-black hover:bg-primary/90 h-10 px-8 rounded-lg"
+          >
             <Link to="/contato">Matricule-se</Link>
           </Button>
         </div>

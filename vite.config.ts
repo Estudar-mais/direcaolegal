@@ -7,28 +7,23 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-    cloudflare: false,
-    vite: {
-        base: "/direcaolegal/",
+  cloudflare: false,
+  vite: {
+    base: "/direcaolegal/",
+  },
+  tanstackStart: {
+    router: {
+      basepath: "/direcaolegal",
     },
-    tanstackStart: {
-        router: {
-            basepath: "/direcaolegal",
-        },
-        spa: {
-            enabled: false,
-        },
-        prerender: {
-            enabled: true,
-            autoSubfolderIndex: true,
-            crawlLinks: false,
-            autoStaticPathsDiscovery: false,
-        },
-        pages: [
-            { path: "/" },
-            { path: "/contato" },
-            { path: "/servicos" },
-            { path: "/sobre" },
-        ],
+    spa: {
+      enabled: false,
     },
+    prerender: {
+      enabled: true,
+      autoSubfolderIndex: true,
+      crawlLinks: false,
+      autoStaticPathsDiscovery: false,
+    },
+    pages: [{ path: "/" }, { path: "/contato" }, { path: "/servicos" }, { path: "/sobre" }],
+  },
 });
