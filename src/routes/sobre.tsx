@@ -39,9 +39,9 @@ function Sobre() {
               Nossa <span className="text-primary">história</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              A Direção Legal nasceu em 2005 com uma missão clara: transformar o processo de
+              A Direção Legal nasceu em 2002 com uma missão clara: transformar o processo de
               habilitação em uma experiência leve, segura e acessível. Hoje, somos referência na
-              região, com mais de 15 mil alunos formados e uma das maiores taxas de aprovação do
+              região, com mais de 5 mil alunos formados e uma das maiores taxas de aprovação do
               estado.
             </p>
             <p className="text-muted-foreground leading-relaxed mt-4">

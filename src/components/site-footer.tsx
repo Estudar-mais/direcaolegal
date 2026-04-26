@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
+import { Facebook, Instagram, Phone, Mail } from "lucide-react";
 import logo from "@/assets/logo2.png";
 
 export function SiteFooter() {
@@ -40,9 +40,6 @@ export function SiteFooter() {
         <div>
           <h4 className="font-bold mb-4 text-primary">Contato</h4>
           <ul className="space-y-3 text-sm text-secondary-foreground/70">
-            <li className="flex items-start gap-2">
-              <MapPin className="h-4 w-4 mt-0.5 text-primary" /> Bairro da paz, Manaus/AM
-            </li>
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-primary" /> (92) 9227-7979
             </li>
@@ -55,7 +52,7 @@ export function SiteFooter() {
           <h4 className="font-bold mb-4 text-primary">Siga-nos</h4>
           <div className="flex gap-3">
             <a
-              href="#"
+              href="https://www.instagram.com/direcaolegalmanaus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               <Instagram className="h-5 w-5" />
