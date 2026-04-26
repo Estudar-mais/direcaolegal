@@ -145,7 +145,7 @@ function Index() {
               {
                 icon: Car,
                 title: "Frota completa",
-                desc: "Categorias A, B, C, D e E em veículos modernos e confortáveis.",
+                desc: "Categorias A, B, D e E em veículos modernos e confortáveis.",
               },
             ].map((f, i) => (
               <Card
