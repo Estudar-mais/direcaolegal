@@ -87,7 +87,7 @@ function Contato() {
                 </div>
                 <div>
                   <Label htmlFor="tel">Telefone</Label>
-                  <Input id="tel" ref={telRef} required placeholder="(92) 9227-7979" />
+                  <Input id="tel" ref={telRef} required placeholder="(92) 99227-7979" />
                 </div>
               </div>
               <div>
@@ -112,9 +112,9 @@ function Contato() {
 
           <div className="space-y-4">
             {[
-              { icon: Phone, t: "Telefone", d: "(92) 9227-7979" },
-              { icon: Mail, t: "E-mail", d: "contato@direcaolegal.com.br" },
-              { icon: Clock, t: "Horário", d: "Seg–Sex: 8h às 20h • Sáb: 8h às 14h" },
+              { icon: Phone, t: "Telefone", d: "(92) 99227-7979" },
+              { icon: Mail, t: "E-mail", d: "marciocfc1@hotmail.com" },
+              { icon: Clock, t: "Horário", d: "Seg–Sex: 8h às 20h • Sáb: 8h às 18h" },
             ].map((c, i) => (
               <Card
                 key={i}

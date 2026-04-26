@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div>
           <img src={logo} alt="Direção Legal" className="h-20 w-auto mb-4" />
           <p className="text-sm text-secondary-foreground/70">
-            Sua autoescola de confiança. Habilitação rápida, segura e descomplicada.
+            Seu treinamento de direção de confiança. Instrutor credenciado, rápido, seguro e com os melhores instrutores.
           </p>
         </div>
         <div>
@@ -41,10 +41,10 @@ export function SiteFooter() {
           <h4 className="font-bold mb-4 text-primary">Contato</h4>
           <ul className="space-y-3 text-sm text-secondary-foreground/70">
             <li className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-primary" /> (92) 9227-7979
+              <Phone className="h-4 w-4 text-primary" /> (92) 99227-7979
             </li>
             <li className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-primary" /> contato@direcaolegal.com.br
+              <Mail className="h-4 w-4 text-primary" /> marciocfc1@hotmail.com
             </li>
           </ul>
         </div>

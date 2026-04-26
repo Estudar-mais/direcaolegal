@@ -10,7 +10,7 @@ export const Route = createFileRoute("/sobre")({
       {
         name: "description",
         content:
-          "Há mais de 20 anos formando motoristas conscientes e seguros. Conheça a história da Direção Legal.",
+          "Há mais de 25 anos formando motoristas conscientes e seguros. Conheça a história da Direção Legal.",
       },
     ],
   }),
@@ -25,7 +25,7 @@ function Sobre() {
         <div className="container mx-auto px-4">
           <span className="text-primary font-bold text-sm uppercase tracking-wider">Sobre nós</span>
           <h1 className="text-5xl md:text-6xl font-black mt-2">
-            Há 20 anos
+            Há 25 anos
             <br />
             <span className="text-primary">formando motoristas</span>
           </h1>
@@ -53,7 +53,7 @@ function Sobre() {
           <div className="grid grid-cols-2 gap-4">
             {[
               { icon: Users, n: "5k", t: "Alunos" },
-              { icon: Heart, n: "20", t: "Anos" },
+              { icon: Heart, n: "25", t: "Anos" },
               { icon: Target, n: "5★", t: "Avaliação" },
             ].map((s, i) => (
               <div
@@ -103,8 +103,9 @@ function Sobre() {
               <h3 className="text-2xl font-black mb-6 text-primary">Credenciamento</h3>
               <ul className="space-y-4">
                 {[
-                  "Instrutor de Trânsito Credenciado pelo DETRAN-AM 2002",
-                  "Curso de Instrutor de Trânsito pelo DETRAN-AM 2002",
+                  "Curso de Instrutor de Trânsito pelo DETRAN - AM, 2002",
+                  "Instrutor de Trânsito Credenciado pelo DETRAN - AM, 2002",
+                  "Curso de Diretor geral de ensino de CFC RES N 789/2020 CONTRAN, 2024",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
@@ -119,10 +120,12 @@ function Sobre() {
               <ul className="space-y-4">
                 {[
                   "Cursos de Atualizações de Instrutor de Trânsito pelo DETRAN-AM",
-                  "Exame Nacional de Instrutores de Trânsito",
-                  "Curso de Atualização Nacional de Instrutores de Trânsito 2015",
-                  "Participação do 1º Fórum de Trânsito do Amazonas, 2021",
-                  "Curso de Atualização de Instrutores de Trânsito, 2021",
+                  "Exame Nacional de Instrutores de Trânsito, 2012",
+                  "Curso de Atualização Nacional de Instrutores de Trânsito, 2015",
+                  "Participação do 1º Fórum de Trânsito do Amazonas DETRAN/AM, 2021",
+                  "Curso de Atualização de Instrutores de Trânsito brasileiro conforme a lei 14.071/20, 2021",
+                  "Curso de atualização para instrutor de transito  RES. N789/2020 - CONTRAN, 2024",
+                  "Curso de Direção defensiva, 2024",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />

@@ -54,19 +54,16 @@ function Index() {
         </div>
         <div className="container relative mx-auto px-4 py-24 md:py-36 grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <span className="inline-block rounded-full bg-primary/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary mb-6">
-              ⭐ Treinamento nº 1 da região
-            </span>
+
             <h1 className="text-5xl md:text-7xl font-black leading-[0.95] text-secondary-foreground">
-              Sua CNH
+              Volte a dirigir
               <br />
               <span className="text-primary drop-shadow-[0_0_30px_oklch(0.86_0.19_95/0.6)]">
-                com tudo de bom.
+                com confiança!
               </span>
             </h1>
             <p className="mt-6 text-lg text-secondary-foreground/80 max-w-lg">
-              Direção Legal é o treinamento para habilitados que acaba com o seu medo e garante sua
-              segurança. Instrutores certificados, frota nova e aprovação garantida.
+              Treinamento prático para habilitados que querem perder o medo e dirigir com segurança no dia a dia.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button
@@ -74,7 +71,7 @@ function Index() {
                 size="lg"
                 className="text-base font-bold h-14 px-8 shadow-[0_0_30px_oklch(0.86_0.19_95/0.5)] hover:scale-105 transition-transform"
               >
-                <Link to="/contato">Quero me matricular</Link>
+                <Link to="/contato">Agendar aula</Link>
               </Button>
               <Button
                 asChild
@@ -102,61 +99,92 @@ function Index() {
         </div>
       </section>
 
-      {/* FEATURES */}
+      {/* SOBRE O SERVIÇO & PARA QUEM É */}
+      <section className="py-24 bg-background border-b border-border/40">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center max-w-6xl mx-auto">
+            {/* Sobre */}
+            <div>
+              <span className="text-primary font-bold text-sm uppercase tracking-wider">
+                Sobre o serviço
+              </span>
+              <h2 className="text-3xl md:text-4xl font-black mt-2 mb-6 leading-tight text-foreground">
+                O Direção Legal é um treinamento especializado para habilitados.
+              </h2>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                Nosso foco é ajudar você a ganhar confiança, prática e independência no trânsito. Mais do que aulas, é um acompanhamento para você perder o medo e assumir o volante com segurança.
+              </p>
+            </div>
+
+            {/* Para quem é */}
+            <div className="bg-secondary/30 rounded-3xl p-8 md:p-10 border border-border/50 shadow-sm relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10" />
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-foreground">
+                <Users className="h-6 w-6 text-primary" />
+                Para quem é indicado?
+              </h3>
+              <ul className="space-y-5">
+                {[
+                  "Pessoas que tiraram a CNH e não dirigem há muito tempo.",
+                  "Quem tem medo de dirigir ou sente insegurança no trânsito.",
+                  "Quem quer aprender na prática (cidade, trânsito real, estacionamento).",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-6 w-6 text-primary shrink-0" />
+                    <span className="text-foreground/80 font-medium text-lg leading-snug">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BENEFÍCIOS */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-primary font-bold text-sm uppercase tracking-wider">
-              Por que Direção Legal
+              Nossos diferenciais
             </span>
             <h2 className="text-4xl md:text-5xl font-black mt-2">
-              Tudo que você precisa
+              4 grandes benefícios
               <br />
-              para dirigir com confiança
+              do nosso método
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
               {
+                icon: Car,
+                title: "Trânsito real",
+                desc: "Aulas práticas diretamente na cidade, enfrentando as situações reais do dia a dia.",
+              },
+              {
                 icon: ShieldCheck,
-                title: "Segurança total",
-                desc: "Carros novos, revisados e instrutores certificados pelo DETRAN.",
+                title: "Instrutor experiente",
+                desc: "Profissionais qualificados, pacientes e focados em te dar total segurança ao volante.",
               },
               {
                 icon: Clock,
                 title: "Horários flexíveis",
-                desc: "Aulas de segunda a sábado, manhã, tarde ou noite. Você escolhe.",
-              },
-              {
-                icon: Award,
-                title: "Alta aprovação",
-                desc: "98% dos nossos alunos passam de primeira no exame prático.",
-              },
-              {
-                icon: GraduationCap,
-                title: "Aulas teóricas online",
-                desc: "Estude de onde quiser, com material exclusivo e simulados.",
+                desc: "Agendamentos que se adaptam à sua rotina, para você treinar no seu tempo livre.",
               },
               {
                 icon: Users,
-                title: "Atendimento humano",
-                desc: "Equipe próxima, te apoiando do começo ao fim do processo.",
-              },
-              {
-                icon: Car,
-                title: "Frota completa",
-                desc: "Categorias A, B, D e E em veículos modernos e confortáveis.",
+                title: "Atendimento personalizado",
+                desc: "Foco total na sua dificuldade, seja em baliza, ladeiras ou trânsito intenso.",
               },
             ].map((f, i) => (
               <Card
                 key={i}
-                className="p-8 border-2 hover:border-primary transition-all hover:shadow-[0_10px_40px_-10px_oklch(0.86_0.19_95/0.4)] hover:-translate-y-1 group"
+                className="p-8 border-2 hover:border-primary transition-all hover:shadow-[0_10px_40px_-10px_oklch(0.86_0.19_95/0.4)] hover:-translate-y-1 group bg-card"
               >
-                <div className="h-14 w-14 rounded-xl bg-primary flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                  <f.icon className="h-7 w-7 text-primary-foreground" />
+                <div className="h-14 w-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                  <f.icon className="h-7 w-7" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">{f.title}</h3>
-                <p className="text-muted-foreground">{f.desc}</p>
+                <h3 className="text-xl font-bold mb-3">{f.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{f.desc}</p>
               </Card>
             ))}
           </div>
@@ -255,10 +283,10 @@ function Index() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,oklch(1_0_0/0.15),transparent_50%)]" />
         <div className="container mx-auto px-4 text-center relative">
           <h2 className="text-4xl md:text-6xl font-black max-w-3xl mx-auto leading-tight">
-            Pronto para tirar sua CNH?
+            Pronto para voltar a dirigir?
           </h2>
           <p className="mt-4 text-lg max-w-xl mx-auto opacity-80">
-            Matricule-se hoje e ganhe condições especiais para começar suas aulas.
+            Agende sua primeira aula hoje e dê o primeiro passo para a sua independência.
           </p>
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
             <Button
@@ -278,7 +306,7 @@ function Index() {
               <CheckCircle2 className="h-5 w-5" /> Parcele em até 12x
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-5 w-5" /> Aulas extras grátis
+              <CheckCircle2 className="h-5 w-5" /> Veículos com duplo comando
             </div>
           </div>
         </div>
