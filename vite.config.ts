@@ -6,4 +6,29 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+export default defineConfig({
+    cloudflare: false,
+    vite: {
+        base: "/direcaolegal/",
+    },
+    tanstackStart: {
+        router: {
+            basepath: "/direcaolegal",
+        },
+        spa: {
+            enabled: false,
+        },
+        prerender: {
+            enabled: true,
+            autoSubfolderIndex: true,
+            crawlLinks: false,
+            autoStaticPathsDiscovery: false,
+        },
+        pages: [
+            { path: "/" },
+            { path: "/contato" },
+            { path: "/servicos" },
+            { path: "/sobre" },
+        ],
+    },
+});
