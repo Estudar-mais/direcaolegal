@@ -9,11 +9,11 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   cloudflare: false,
   vite: {
-    base: "/direcaolegal/",
+    base: "/",
   },
   tanstackStart: {
     router: {
-      basepath: "/direcaolegal",
+      basepath: "/",
     },
     spa: {
       enabled: false,
