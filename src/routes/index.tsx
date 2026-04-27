@@ -19,16 +19,16 @@ import heroImg from "@/assets/hero-driving.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Direção Legal — Autoescola | CNH rápida e segura" },
+      { title: "Direção Legal — treinamento para habilitados" },
       {
         name: "description",
         content:
-          "Autoescola Direção Legal: habilitação CNH categorias A, B, C, D e E. Aulas práticas, teóricas e instrutores qualificados. Matricule-se já!",
+          "Direção Legal: treinamento para habilitados. Aulas práticas e instrutores qualificados.",
       },
-      { property: "og:title", content: "Direção Legal — Autoescola" },
+      { property: "og:title", content: "Direção Legal — treinamento para habilitados" },
       {
         property: "og:description",
-        content: "Sua habilitação rápida, segura e descomplicada com a Direção Legal.",
+        content: "Treinamento prático para habilitados que querem perder o medo e dirigir com segurança no dia a dia.",
       },
     ],
   }),

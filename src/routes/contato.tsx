@@ -14,7 +14,7 @@ import { useRef } from "react";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato — Direção Legal Autoescola" },
+      { title: "Contato — Direção Legal" },
       {
         name: "description",
         content:

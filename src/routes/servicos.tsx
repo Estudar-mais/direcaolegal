@@ -8,7 +8,7 @@ import { Bike, Car, Bus, GraduationCap, RefreshCw, FileCheck, Heart, Truck } fro
 export const Route = createFileRoute("/servicos")({
   head: () => ({
     meta: [
-      { title: "Serviços — Direção Legal Autoescola" },
+      { title: "Serviços — Direção Legal - treinamento para habilitados " },
       {
         name: "description",
         content:

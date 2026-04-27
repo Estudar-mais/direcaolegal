@@ -6,7 +6,7 @@ import { Award, Users, Heart, Target } from "lucide-react";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre — Direção Legal Autoescola" },
+      { title: "Sobre — Direção Legal - Treinamento para habilitados" },
       {
         name: "description",
         content:
@@ -76,7 +76,7 @@ function Sobre() {
               t: "Missão",
               d: "Formar motoristas seguros e conscientes através de uma educação de qualidade.",
             },
-            { t: "Visão", d: "Ser a autoescola mais confiável e admirada da região." },
+            { t: "Visão", d: "Ser o treinamento para habilitados mais confiável e admirada da região." },
             { t: "Valores", d: "Respeito, segurança, transparência e dedicação a cada aluno." },
           ].map((v, i) => (
             <div key={i}>
